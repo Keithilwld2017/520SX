@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">520SX</string>
+    <string name="feature_1_dis">feature_1_dis</string>
+    <string name="feature_1">功能1</string>
 </resources>
