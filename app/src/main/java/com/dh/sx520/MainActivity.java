@@ -2,6 +2,7 @@ package com.dh.sx520;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,6 +33,7 @@ public class MainActivity extends Activity {
      * @param view view
      */
     public void feature1(View view){
+        Log.i("MainActivity","feature1代码优化！");
         if (btn_feature_1.getText().toString().equals("功能1")){
             btn_feature_1.setText(R.string.feature_1_dis);
         }else {
@@ -52,7 +54,7 @@ public class MainActivity extends Activity {
         }
     }
     /**
-     * feature-2
+     * feature-3
      * display HelloWorld
      * @param view view
      */
