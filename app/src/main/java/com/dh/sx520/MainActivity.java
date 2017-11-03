@@ -11,6 +11,7 @@ public class MainActivity extends Activity {
     private Button btn_feature_1;
     private Button btn_feature_2;
     private Button btn_feature_3;
+    private Button btn_feature_4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,8 @@ public class MainActivity extends Activity {
     private void viewInit(){
         btn_feature_1 = findViewById(R.id.btn_feature1);
         btn_feature_2 = findViewById(R.id.btn_feature2);
-        btn_feature_2 = findViewById(R.id.btn_feature3);
+        btn_feature_3 = findViewById(R.id.btn_feature3);
+        btn_feature_4 = findViewById(R.id.btn_feature4);
     }
 
 
@@ -63,6 +65,18 @@ public class MainActivity extends Activity {
             btn_feature_3.setText(R.string.feature_3_dis);
         }else {
             btn_feature_3.setText(R.string.feature_3);
+        }
+    }
+    /**
+     * feature-4
+     * display HelloWorld
+     * @param view view
+     */
+    public void feature4(View view){
+        if (btn_feature_4.getText().toString().equals("功能4")){
+            btn_feature_4.setText(R.string.feature_4_dis);
+        }else {
+            btn_feature_4.setText(R.string.feature_4);
         }
     }
 

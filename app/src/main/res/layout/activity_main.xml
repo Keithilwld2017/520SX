@@ -33,5 +33,12 @@
         android:layout_below="@id/btn_feature2"
         android:layout_centerHorizontal="true"
         android:text="function3"/>
+    <Button
+        android:id="@+id/btn_feature4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_feature3"
+        android:layout_centerHorizontal="true"
+        android:text="function4"/>
 
 </RelativeLayout>
