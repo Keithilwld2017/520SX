@@ -10,7 +10,9 @@ public class MainActivity extends Activity {
     private Button btn_feature_1;
     private Button btn_feature_2;
     private Button btn_feature_3;
+    private Button btn_feature_4;
     private Button btn_feature_5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,8 @@ public class MainActivity extends Activity {
     private void viewInit(){
         btn_feature_1 = findViewById(R.id.btn_feature1);
         btn_feature_2 = findViewById(R.id.btn_feature2);
-        btn_feature_2 = findViewById(R.id.btn_feature3);
+        btn_feature_3 = findViewById(R.id.btn_feature3);
+        btn_feature_4 = findViewById(R.id.btn_feature4);
         btn_feature_5 = findViewById(R.id.btn_feature5);
     }
 
@@ -33,6 +36,7 @@ public class MainActivity extends Activity {
      * @param view view
      */
     public void feature1(View view){
+        Log.i("MainActivity","feature1代码优化！");
         if (btn_feature_1.getText().toString().equals("功能1")){
             btn_feature_1.setText(R.string.feature_1_dis);
         }else {
@@ -62,6 +66,18 @@ public class MainActivity extends Activity {
             btn_feature_3.setText(R.string.feature_3_dis);
         }else {
             btn_feature_3.setText(R.string.feature_3);
+        }
+    }
+    /**
+     * feature-4
+     * display HelloWorld
+     * @param view view
+     */
+    public void feature4(View view){
+        if (btn_feature_4.getText().toString().equals("功能4")){
+            btn_feature_4.setText(R.string.feature_4_dis);
+        }else {
+            btn_feature_4.setText(R.string.feature_4);
         }
     }
     /**
