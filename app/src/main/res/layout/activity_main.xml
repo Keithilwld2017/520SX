@@ -19,5 +19,12 @@
         android:layout_below="@id/tvHelloWorld"
         android:layout_centerHorizontal="true"
         android:text="function1"/>
+    <Button
+        android:id="@+id/btn_feature2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_feature1"
+        android:layout_centerHorizontal="true"
+        android:text="function2"/>
 
 </RelativeLayout>
